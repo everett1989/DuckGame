@@ -1,0 +1,238 @@
+html,
+body {
+    margin: 0;
+}
+
+.container {
+    height: 600px;
+    width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: crosshair;
+    cursor: url(http://dub.washington.edu/djangosite/media/icons/pubs/reticlebm7.png) 64 64, crosshair;
+    position: relative;
+    /*margin-top:50px;*/
+}
+
+.lane {
+    width: 200%;
+    height: 30%;
+    background-color: #3460E6;
+    overflow: hidden;
+    /*display:block;*/
+}
+
+.laneForward {
+    margin-left: -30%;
+}
+
+.laneBackward {
+    margin-left: 0;
+}
+
+.lane2 {
+    background-color: lightblue;
+}
+
+.duck {
+    background-image: url('https://cdn4.iconfinder.com/data/icons/artcore/512/icon_cyberduck.png');
+    background-size: cover;
+    /*background-size: 100px;*/
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /*background-color:red;*/
+    height: 80%;
+    width: 7%;
+    margin-top: 2.6%;
+    margin-right: 8%;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: margin-bottom 1s;
+    transition: margin-bottom 1s;
+    /* background-color:green; */
+}
+
+.duck:nth-child(odd) {
+    margin-bottom: -9%;
+    -webkit-transition: margin-bottom 1s;
+    transition: margin-bottom 1s;
+}
+
+.clickDuck {
+    margin-bottom: -300px !important;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: margin-bottom 2s, -webkit-transform 1s !important;
+    transition: margin-bottom 2s, transform 1s !important;
+}
+
+* {
+    -webkit-user-select: none;
+    /* Removes user highlight */
+    -moz-user-select: none;
+    /* Chrome all / Safari all */
+    -ms-user-select: none;
+    /* Firefox all */
+}
+
+.ballLane {
+    height: 10%;
+    overflow: visible;
+    background-color: rgba(0, 0, 0, 0.57);
+    position: static;
+    width: 100%;
+    margin-left: 0;
+}
+
+.ball {
+    /*background-color:black;*/
+    background-image: url(http://www.veryicon.com/icon/png/Sport/Sportset/Tennis%20ball.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* height: 30px; */
+    /* width:30px; */
+    width: 7%;
+    height: 7%;
+    /*border-radius: 15px;*/
+    display: none;
+    left: 45%;
+    position: absolute;
+    z-index: 100;
+    top: 92.5%;
+}
+
+.ball1 {
+    left: 39%;
+}
+
+.ball2 {
+    left: 44%;
+}
+
+.ball3 {
+    left: 49%;
+}
+
+.ball4 {
+    left: 54%;
+}
+
+.ball5 {
+    left: 59%;
+}
+
+.pow {
+    background-image: url('http://vignette1.wikia.nocookie.net/clubpenguin/images/e/ef/Pow_Emote.png/revision/latest?cb=20130426014904');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 10%;
+    width: 9%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.duckScore {
+    background-image: url('https://cdn4.iconfinder.com/data/icons/artcore/512/icon_cyberduck.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 80%;
+    width: 5%;
+    display: inline-block;
+    margin-top: 4px;
+    float: right;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.duckShaded {
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+
+.onDeck {
+    display: block;
+}
+
+.introPage {
+    z-index: 200;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+
+.resultPage {
+    z-index: 200;
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.coupon {
+    background-image: url('http://ceblog.s3.amazonaws.com/wp-content/uploads/2013/09/coupon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 300px;
+    height: 228px;
+    display: block;
+    position: relative;
+}
+
+.resultSection {
+    display: none;
+}
+
+.resultPage h2,
+.introPage h2 {
+    text-align: center;
+    color: #FFF;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: red;
+    padding: 20px 30px;
+    color: white;
+    display: block;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form {
+    margin: 0 auto;
+    width: 244px;
+}
+
+.submitToRedeem {
+    position: absolute;
+    bottom: 0;
+}
+
+.name,
+.phone {
+    width: 43%;
+    margin: 0 auto;
+}
+
+.email {
+    width: 100%;
+}

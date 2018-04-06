@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Duck Game</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<div class='container'>
+	    <div class='introPage'>
+	        <h2>Hit Three Ducks To Win!</h2>
+	        <p class='button clickToBegin'>Click To Begin</p>
+	    </div>
+
+	    <div class='resultPage'>
+	        <span class='resultSection resultWin'>
+	            <h2>You Win</h2>
+	            <span class='coupon'></span>
+	        </span>
+	        <span class='resultSection resultLose'>
+	            <h2>You Lose</h2>
+	        </span>
+	          <p class='button playAgain'>Play Again?</p>
+	    </div>
+
+	    <div class='lane laneForward lane1'>
+	        <span class='duck'></span>
+	         <span class='duck'></span>
+	         <span class='duck'></span>
+	         <span class='duck'></span>
+	         <span class='duck'></span>
+	    </div>
+	    <div class='lane laneBackward lane2'>
+	        <span class='duck'></span>
+	         <span class='duck'></span>
+	         <span class='duck'></span>
+	         <span class='duck'></span>
+	         <span class='duck'></span>
+	    </div>
+	    <div class='lane laneForward lane3'>
+	        <span class='duck'></span>
+	         <span class='duck'></span>
+	         <span class='duck'></span>
+	         <span class='duck'></span>
+	         <span class='duck'></span>
+	    </div>
+	    <div class='lane ballLane'>
+	        <span class='ball onDeck ball1'></span>
+	         <span class='ball onDeck ball2'></span>
+	         <span class='ball onDeck ball3'></span>
+	         <span class='ball onDeck ball4'></span>
+	         <span class='ball onDeck ball5'></span>
+
+	        <span class='duckScore duckShaded'></span>
+	        <span class='duckScore duckShaded'></span>
+	        <span class='duckScore duckShaded'></span>
+
+	        <span class='pow'></span>
+	    </div>
+	</div>
+
+	<script
+	 	src="https://code.jquery.com/jquery-1.12.4.min.js"
+  		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  		crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
